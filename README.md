@@ -11,32 +11,53 @@ Cấu trúc
       - dark.css   | các css chứa dark.namecss ví dụ dark.container 
     - js     | thư mục chứa script js của website
       - script.js
+--------------------------------------------------------------------------------------------------
+- Khởi tạo và cài đặt kho lưu trữ Git
+  - git init
 
-Các câu lệnh github cơ bản:
+- Sao chép kho lưu trữ từ xa về máy tính
+  - git clone <url>
 
-git init: Khởi tạo một kho lưu trữ Git mới.
-git clone <url>: Sao chép một kho lưu trữ từ GitHub về máy tính.
-git add <file>: Thêm tệp hoặc thư mục vào vùng sẵn sàng cho lần commit tiếp theo.
-git commit -m "Commit message": Tạo một commit với tin nhắn mô tả thay đổi.
-git push: Đẩy các commit cục bộ lên kho lưu trữ từ xa trên GitHub.
-git pull: Cập nhật phiên bản cục bộ và hợp nhất với phiên bản từ kho lưu trữ từ xa.
-git status: Xem trạng thái của vùng làm việc và các tệp đã sửa đổi.
-Các câu lệnh nhánh (branch):
-8. git branch: Liệt kê các nhánh hiện có trong kho lưu trữ.
+- Quản lý thay đổi và commit
+  - Thêm tệp hoặc thư mục vào vùng sẵn sàng cho lần commit tiếp theo
+    - git add <file>
+  - Tạo một commit với tin nhắn mô tả thay đổi
+    - git commit -m "Commit message"
 
-git checkout <branch>: Chuyển đổi đến một nhánh khác.
-git checkout -b <new-branch>: Tạo và chuyển đổi đến một nhánh mới.
-git merge <branch>: Hợp nhất một nhánh vào nhánh hiện tại.
-git branch -d <branch>: Xóa một nhánh cục bộ.
-Các câu lệnh làm việc với từ xa (remote):
-13. git remote add <name> <url>: Thêm một kho lưu trữ từ xa vào danh sách các kho từ xa.
+- Đồng bộ hóa với kho lưu trữ từ xa
+  - Đẩy các commit cục bộ lên kho lưu trữ từ xa trên GitHub
+    - git push
+  - Cập nhật phiên bản cục bộ và hợp nhất với phiên bản từ kho lưu trữ từ xa
+    - git pull
 
-git fetch <remote>: Tải về thông tin từ một kho từ xa mà không thực hiện hợp nhất.
-git pull <remote> <branch>: Kéo phiên bản từ kho từ xa và hợp nhất vào nhánh cục bộ.
-git push <remote> <branch>: Đẩy các commit lên kho từ xa.
-Các câu lệnh khác:
-17. git log: Xem lịch sử commit.
+- Quản lý nhánh (branch)
+  - Liệt kê các nhánh hiện có trong kho lưu trữ
+    - git branch
+  - Chuyển đổi đến một nhánh khác
+    - git checkout <branch>
+  - Tạo và chuyển đổi đến một nhánh mới
+    - git checkout -b <new-branch>
+  - Hợp nhất một nhánh vào nhánh hiện tại
+    - git merge <branch>
+  - Xóa một nhánh cục bộ
+    - git branch -d <branch>
 
-git diff: Xem sự khác biệt giữa các phiên bản.
-git stash: Tạm thời lưu trữ thay đổi chưa commit.
-git remote -v: Xem danh sách các kho từ xa và URL của họ.
+- Quản lý kho từ xa (remote)
+  - Thêm một kho lưu trữ từ xa vào danh sách các kho từ xa
+    - git remote add <name> <url>
+  - Tải về thông tin từ một kho từ xa mà không thực hiện hợp nhất
+    - git fetch <remote>
+  - Kéo phiên bản từ kho từ xa và hợp nhất vào nhánh cục bộ
+    - git pull <remote> <branch>
+  - Đẩy các commit lên kho từ xa
+    - git push <remote> <branch>
+
+- Các câu lệnh khác
+  - Xem lịch sử commit
+    - git log
+  - Xem sự khác biệt giữa các phiên bản
+    - git diff
+  - Tạm thời lưu trữ thay đổi chưa commit
+    - git stash
+  - Xem danh sách các kho từ xa và URL của họ
+    - git remote -v
