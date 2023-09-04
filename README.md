@@ -12,6 +12,7 @@ Cấu trúc
     - js     | thư mục chứa script js của website
       - script.js
 --------------------------------------------------------------------------------------------------
+Các câu lệnh về github
 - Khởi tạo và cài đặt kho lưu trữ Git
   - git init
 
