@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* nav start */
+.theme-setting {
+    width: 24px;
+    height: 24px;
+    padding: 0px 0;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 992.98px) {
+    .theme-setting {
+        display: none;
+    }
+
+}
+
+.light.fa-sun {
+    /* nếy đang có light thì chúng ta sẽ cho nó ẩn icon mặt trời */
+    display: none;
+}

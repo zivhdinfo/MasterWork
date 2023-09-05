@@ -9,7 +9,13 @@
       W3Layouts free WordPress Demo Sites site
     </title>
     <!-- library/framework css -->
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,11 +26,19 @@
     <link rel="stylesheet" href="./assets/css/dark.css" />
     <link rel="stylesheet" href="./assets/css/light.css" />
   </head>
-  <body>
-    <header class="container">
+  <body id="#light">
+    <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar w/ text</a>
+        <div class="container-fluid container-lg">
+          <div class="logo">
+            <span class="fa fa-handshake-alt"></span> Masterwork
+          </div>
+          <a class="collapsed me-2 ms-auto navbar-toggler">
+            <div class="nav-theme-setting">
+              <span class="fa fa-moon"></span>
+              <span class="fa fa-sun"></span>
+            </div>
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -36,21 +50,52 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Blog Posts</a></li>
+                  <li><a class="dropdown-item" href="#">Landing page</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">404 page</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
-            <span class="navbar-text">
-              Navbar text with an inline element
-            </span>
+            <span class="badge text-bg-light"
+              ><i class="fa fa-search" aria-hidden="true"></i
+            ></span>
+
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+
+            <button id="switchButton" class="theme-setting">
+              <span class="light fa fa-moon"></span>
+              <span class="dark fa fa-sun"></span>
+            </button>
           </div>
         </div>
       </nav>

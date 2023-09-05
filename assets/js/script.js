@@ -17,3 +17,9 @@
         );
     });
   });
+// dark theme 
+
+document.getElementById("switchButton").onclick = function () {
+
+  document.getElementById("light").classList.toggle("dark");
+};
