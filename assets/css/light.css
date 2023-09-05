@@ -24,7 +24,15 @@
 
 }
 
-.light.fa-sun {
-    /* nếy đang có light thì chúng ta sẽ cho nó ẩn icon mặt trời */
+#switchButton {
+    border: none;
+    font-size: 24px;
+}
+
+#switchButton .fa-sun {
     display: none;
+}
+
+#switchButton .fa-moon {
+    display: block;
 }

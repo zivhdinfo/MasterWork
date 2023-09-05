@@ -1,3 +1,23 @@
-.dark.fa-moon {
+.dark#myBody {
+    background-color: #1b1d1e;
+    color: white
+}
+
+/* nav start  */
+.dark .navbar {
+    background-color: #141617 !important;
+}
+
+.dark #switchButton {
+
+    font-size: 24px;
+}
+
+.dark #switchButton .fa-sun {
+    display: block;
+    color: white;
+}
+
+.dark #switchButton .fa-moon {
     display: none;
 }
