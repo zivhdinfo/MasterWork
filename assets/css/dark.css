@@ -25,6 +25,7 @@
 .dark .dropdown-menu {
     background-color: #141617 !important;
     color: white;
+    border: 1px solid #57595d;
 }
 
 .dark a.dropdown-item {
@@ -44,4 +45,20 @@
 
 .dark #switchButton .gg-moon {
     display: none;
+}
+
+.dark .navbar-nav .dropdown-menu:before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background: #141617;
+    border: 1px solid #57595d;
+    display: block;
+    border-right: none;
+    border-bottom: none;
+    transform: translateX(-50%) rotateZ(45deg);
+    position: absolute;
+    top: 35px;
+    left: 49%;
+    z-index: 1;
 }

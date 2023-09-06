@@ -81,6 +81,18 @@ header .fa-search {
     background: #DC4F72 !important;
 }
 
-.end-4 {
-    right: 4.7% !important;
+.navbar-nav .dropdown-menu:before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    display: block;
+    border-right: none;
+    border-bottom: none;
+    transform: translateX(-50%) rotateZ(45deg);
+    position: absolute;
+    top: 35px;
+    left: 49%;
+    z-index: 1;
 }
