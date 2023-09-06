@@ -1,3 +1,7 @@
+.dark {
+    transition: 0.3s all;
+}
+
 .dark#myBody {
     background-color: #1b1d1e;
     color: white
@@ -8,16 +12,36 @@
     background-color: #141617 !important;
 }
 
-.dark #switchButton {
 
-    font-size: 24px;
+
+.dark .nav-link {
+    color: #b7b7b7 !important;
 }
 
-.dark #switchButton .fa-sun {
+.dark .nav-link.active {
+    color: #DC4F72 !important;
+}
+
+.dark .dropdown-menu {
+    background-color: #141617 !important;
+    color: white;
+}
+
+.dark a.dropdown-item {
+    color: #fff !important;
+    transition: 0.2s;
+}
+
+.dark a.dropdown-item:hover {
+    background-color: #141617 !important;
+    color: #DC4F72 !important;
+}
+
+.dark #switchButton .gg-sun {
     display: block;
     color: white;
 }
 
-.dark #switchButton .fa-moon {
+.dark #switchButton .gg-moon {
     display: none;
 }

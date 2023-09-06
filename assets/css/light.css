@@ -27,12 +27,60 @@
 #switchButton {
     border: none;
     font-size: 24px;
+    padding-right: 15px;
 }
 
-#switchButton .fa-sun {
+#switchButton .gg-sun {
     display: none;
 }
 
-#switchButton .fa-moon {
+#switchButton .gg-moon {
     display: block;
+}
+
+header .fa-search {
+    background: #ececec;
+    border: #d2d2d2 1px solid;
+    color: #7c7b7b;
+    font-size: 16px;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.nav-link.not_active {
+    color: #2c3038;
+}
+
+.nav-link.not_active {
+    color: #2c3038;
+}
+
+.nav-link.active {
+    color: #DC4F72 !important;
+}
+
+.dropdown-toggle::after {
+    transition: 0.2s;
+}
+
+.dropdown-toggle.show::after {
+    display: inline-block;
+    color: #DC4F72;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+.button-nav {
+    color: #fff !important;
+    background: #DC4F72 !important;
+}
+
+.end-4 {
+    right: 4.7% !important;
 }
