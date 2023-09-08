@@ -48,13 +48,38 @@ header .fa-search {
     border-radius: 50%;
 }
 
-.nav-link.not_active {
-    color: #2c3038;
+.nav-link.not_active,
+{
+color: #2c3038;
+cursor: pointer;
 }
 
-.nav-link.not_active {
-    color: #2c3038;
+.nav-link.not_active:hover {
+    color: #dc4f72;
+    background-color: transparent;
 }
+
+.nav-link.not_active::before,
+.nav-link.active::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    background-color: #DC4F72;
+    bottom: 20px;
+    transition: 0.3s all;
+}
+
+.nav-link.not_active:hover::before,
+.nav-link.active:hover::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    transition: 0.3s all;
+
+}
+
+
 
 .nav-link.active {
     color: #DC4F72 !important;
@@ -95,4 +120,67 @@ header .fa-search {
     top: 35px;
     left: 49%;
     z-index: 1;
+}
+
+.navbar-nav .dropdown-item {
+    padding: 5px 20px;
+    margin: 2px 0px;
+}
+
+.navbar-nav .dropdown-item {
+    transition: all 0.3s;
+    position: relative;
+
+}
+
+.navbar-nav .dropdown-item:hover {
+    color: #dc4f72;
+    background-color: transparent;
+}
+
+.navbar-nav .dropdown-item::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    background-color: #DC4F72;
+    bottom: 1px;
+    transition: 0.3s all;
+}
+
+.navbar-nav .dropdown-item:hover::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    transition: 0.3s all;
+
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+        left: -46px;
+        background-color: #FFFFFF;
+        padding: 15px 0px;
+        border: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .navbar-nav .dropdown-menu:before {
+        content: '';
+        width: 14px;
+        height: 14px;
+        background: #fff;
+        border: none;
+        display: block;
+        border-right: none;
+        border-bottom: none;
+        transform: translateX(-50%) rotateZ(45deg);
+        position: absolute;
+        top: -8px;
+        left: 49%;
+        z-index: 1;
+    }
+
+
 }

@@ -22,7 +22,7 @@
   });
 
 
-var switchButtons = document.querySelectorAll(".button2, .button1");
+var switchButtons = document.querySelectorAll(".button-mobilie, .button-pc");
 
 
 switchButtons.forEach(function(button) {
