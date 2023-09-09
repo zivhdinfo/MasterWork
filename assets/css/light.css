@@ -8,6 +8,12 @@
     font-family: 'Nunito', sans-serif;
 }
 
+/* button */
+.theme-button{
+    height: 54px;
+    padding: 0 30px;
+}
+
 /* nav start */
 .theme-setting {
     width: 24px;
@@ -21,7 +27,6 @@
     .theme-setting {
         display: none;
     }
-
 }
 
 #switchButton {
@@ -96,3 +101,89 @@ header .fa-search {
     left: 49%;
     z-index: 1;
 }
+
+/* about company */
+.about_company{
+    background: #F7F9FC;
+}
+.about_company h6{
+    color: #DC4F72;
+    font-size: 16px;
+    font-weight: bold !important;
+}
+
+.about_company h3{
+    font-size: 35px;
+    font-weight: bold !important;
+}
+
+.about_company img{
+    transition: 0.5s;
+}
+
+.about_company img:hover{
+    transform: translateY(-10px);
+}
+
+
+/* stats */
+.stats{
+    background: #F7F9FC;
+}
+
+.stats_info{
+    border: 1px solid transparent;
+    background: white;
+    padding: 30px 30px 5px 30px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.stats_info h4{
+    font-size: 16px;
+    font-weight: bold !important;
+}
+
+.stats_info .counter{
+    color: #DC4F72;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* book a demo */
+.book_demo h3{
+    color: #2C3038;
+    font-size: 46px;
+    font-weight: 900;
+}
+
+.book_demo p {
+    color: #5A5A5A;
+    font-size: 16px;
+}
+
+.btn-outline-primary{
+    border: 1px solid #DC4F72;
+    color: #DC4F72;
+}
+
+.btn-outline-primary:hover{
+    background: #DC4F72 !important;
+    border-color: #DC4F72 !important;
+}
+
+.btn-primary{
+    background: #DC4F72;
+    border: 1px solid #DC4F72;
+}
+
+.btn-primary:hover{
+    background: #D62f58 !important;
+    border-color: #CF2952 !important;
+}
+
+.buttons .mr-2, .buttons .mx-2 {
+    margin-right: 0.5rem !important;
+}
+
+

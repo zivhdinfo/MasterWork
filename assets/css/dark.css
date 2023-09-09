@@ -62,3 +62,82 @@
     left: 49%;
     z-index: 1;
 }
+
+/* about company */
+.dark .about_company{
+    background: #191C1D;
+}
+.dark .about_company h6{
+    color: #DC4F72;
+    font-size: 16px;
+    font-weight: bold !important;
+}
+
+.dark .about_company h3{
+    font-size: 35px;
+    font-weight: bold !important;
+}
+
+.dark .about_company img{
+    transition: 0.5s;
+}
+
+.dark .about_company img:hover{
+    transform: translateY(-10px);
+}
+
+
+/* stats */
+.dark .stats{
+    background: #191C1D;
+}
+
+.dark .stats_info{
+    border: 1px solid #333;
+    background: #131617;
+    padding: 30px 30px 5px 30px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.dark .stats_info h4{
+    font-size: 16px;
+    font-weight: bold !important;
+}
+
+.dark .stats_info .counter{
+    color: #DC4F72;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* book a demo */
+.dark .book_demo h3{
+    color: #EEEEEE;
+    font-size: 46px;
+}
+
+.dark .book_demo p {
+    color: #B7B7B7;
+    font-size: 16px;
+}
+
+.dark .btn-outline-primary{
+    border: 1px solid #DC4F72;
+    color: #DC4F72;
+}
+
+.dark .btn-outline-primary:hover{
+    background: #DC4F72 !important;
+    border-color: #DC4F72 !important;
+}
+
+.dark .btn-primary{
+    background: #DC4F72;
+    border: 1px solid #DC4F72;
+}
+
+.dark .btn-primary:hover{
+    background: #D62f58 !important;
+    border-color: #CF2952 !important;
+}
