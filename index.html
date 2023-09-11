@@ -93,7 +93,14 @@
               </li>
             </ul>
             <span class="badge"
-              ><i class="fa fa-search" aria-hidden="true"></i
+              ><i
+                class="fa fa-search"
+                aria-hidden="true"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              ></i
             ></span>
             <br />
 
@@ -141,7 +148,46 @@
     <footer>
       <!-- place footer here -->
     </footer>
-    <!-- Bootstrap JavaScript Libraries -->
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal search-modal"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+      data-bs-keyboard="false"
+      data-bs-backdrop="static"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div id="search" class="pop-overlay">
+              <div class="popup">
+                <form class="search-box d-sm-flex">
+                  <input
+                    type="search"
+                    placeholder="Enter Keyword"
+                    name="s"
+                    required="required"
+                    autofocus=""
+                  />
+                  <button type="submit" class="btn">Search</button>
+                </form>
+                <a
+                  class="close"
+                  href="#close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  >×</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -153,6 +199,13 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $("#exampleModal").modal({
+        backdrop: "static",
+        keyboard: false,
+      });
+    </script>
+
     <!-- jquery js  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- website js  -->
