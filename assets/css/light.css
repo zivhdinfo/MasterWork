@@ -8,6 +8,41 @@
     font-family: 'Nunito', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+h1.title {
+    font-size: 50px;
+    line-height: 57.5px;
+    color: #2C3038;
+    font-weight: 700;
+}
+
+h2.title {
+    color: #DC4F72;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    max-width: 450px;
+}
+
+.sub_title {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #DC4F72;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.header-section h3 {
+    color: #2C3038;
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 700;
+}
+
 /* nav start */
 .theme-setting {
     width: 24px;
@@ -353,20 +388,6 @@ header .fa-search:hover {
     padding-top: 5rem;
 }
 
-.banner h1.title {
-    font-size: 50px;
-    line-height: 57.5px;
-    color: #2C3038;
-    font-weight: 700;
-}
-
-.banner h2.title {
-    color: #2C3038;
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: 400;
-    max-width: 450px;
-}
 
 .banner button {
     transition: 0.3s ease-out;
@@ -383,7 +404,39 @@ header .fa-search:hover {
     padding: 5px 40px;
 }
 
+/* skill start */
+.skill_bg {
+    padding: 3rem 2rem;
+    background: #f7f9fc;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.8s;
+}
 
+.skill_bg:hover {
+    transform: translateY(-7px);
+    background: #ffffff;
+    transition: all 0.8s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.skill h3 {
+    font-size: 26px;
+    line-height: 35px;
+    font-weight: 700;
+    color: #2C3038;
+
+}
+
+.skill p {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 24.5px;
+    color: #8c8a8a;
+}
+
+
+/* end skill  */
 /* about company */
 .about_company {
     background: #F7F9FC;
