@@ -388,6 +388,14 @@ header .fa-search:hover {
     padding-top: 5rem;
 }
 
+.banner h2.title {
+    color: #5a5a5a;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    max-width: 450px;
+}
+
 
 .banner button {
     transition: 0.3s ease-out;
@@ -521,4 +529,41 @@ header .fa-search:hover {
 .buttons .mr-2,
 .buttons .mx-2 {
     margin-right: 0.5rem !important;
+}
+
+/* commit :start */
+.commit {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)), url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 480px;
+    display: grid;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.title_commit {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.commit p {
+    font-size: 16px;
+    color: #eee;
+    line-height: 24.5px;
+}
+
+.btn_commit {
+    transition: 0.3s ease-out;
+    display: inline-block;
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px 30px;
+    text-transform: uppercase;
 }
