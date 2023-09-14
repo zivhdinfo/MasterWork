@@ -31,8 +31,3 @@ switchButtons.forEach(function(button) {
   };
 });
 
-// ngăn tắt modal 
-$('#myModal').modal({
-  backdrop: 'static',
-  keyboard: false
-});
