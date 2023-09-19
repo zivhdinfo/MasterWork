@@ -401,7 +401,6 @@ header .fa-search:hover {
     transition: 0.3s ease-out;
     display: inline-block;
     line-height: 52px;
-
     font-weight: bold !important;
     padding: 0px 50px !important;
     text-transform: uppercase;
@@ -469,6 +468,17 @@ header .fa-search:hover {
     transform: translateY(-10px);
 }
 
+.about_company .theme-button {
+    transition: 0.3s ease-out;
+    display: inline-block;
+    line-height: 52px;
+    font-weight: bold !important;
+    padding: 0px 40px !important;
+    text-transform: uppercase;
+    border: unset;
+    background: #dc4f72;
+
+}
 
 /* stats */
 .stats {
@@ -566,4 +576,56 @@ header .fa-search:hover {
     margin: 0px;
     padding: 0px 30px;
     text-transform: uppercase;
+}
+
+/* faq start  */
+.faq {
+    background-color: #f7f9fc !important;
+}
+
+.faq-image {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
+}
+
+.faq_img {
+    transition: 0.3s all;
+    border-radius: 5px;
+}
+
+.faq_img:hover {
+    transform: translateY(-10px);
+    transition: 0.3s all;
+}
+
+.accordion-item {
+    border-radius: 5px !important;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+
+.accordion-button:not(.collapsed) {
+    box-shadow: unset;
+}
+
+.accordion-button:focus {
+    box-shadow: unset;
+    color: unset;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-icon);
+
+}
+
+.accordion-button {
+    background-color: #FFFFFF !important;
+    border-radius: 5px !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: unset;
+
 }
