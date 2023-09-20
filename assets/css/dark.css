@@ -47,6 +47,23 @@
     display: none;
 }
 
+.dark #search input {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #b7b7b7;
+    height: 55px;
+    padding: 15px 20px 12px;
+    background: #1e1e1e;
+    width: 100%;
+    border: 1px solid #4e4949;
+    border-radius: 0;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    border-right: none;
+}
+
 .dark .navbar-nav .dropdown-menu:before {
     content: '';
     width: 14px;
@@ -61,4 +78,97 @@
     top: 35px;
     left: 49%;
     z-index: 1;
+}
+
+.dark .dropdown-toggle::after {
+
+    color: #eee;
+
+}
+
+.dark header .fa-search {
+
+
+    opacity: .7;
+    background: #141617;
+    border: 1px solid #b7b7b7;
+    color: #b7b7b7;
+    font-size: 14px;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+/* banner dark  */
+.dark .banner {
+    background: linear-gradient(to right, #131617, rgba(255, 255, 255, 0.92));
+}
+
+.dark h1.title {
+    font-size: 50px;
+    line-height: 57.5px;
+    color: #eee;
+    font-weight: 700;
+}
+
+.dark h2.title {
+    color: #b7b7b7;
+}
+
+.dark .skill_bg {
+    background: #242728;
+    border: 1px solid #191c1d;
+}
+
+.dark .skill_bg:hover {
+    transform: translateY(-7px);
+    background: #131617;
+    transition: all 0.8s;
+    border: 1px solid #333;
+}
+
+.dark .skill h3 {
+
+    color: #eee;
+}
+
+.dark .skill p {
+    color: #b7b7b7;
+}
+
+/* .about_company  and start  */
+.dark .about_company,
+.dark .stats {
+    background: #212526;
+}
+
+.dark .stats_info {
+
+    background: #131617;
+
+    border: 1px solid #333;
+}
+
+.dark .faq {
+    background-color: #212526 !important;
+}
+
+/* faq  */
+.dark .accordion-button,
+.dark .accordion-body {
+    border: 1px solid #333;
+    background: #131617 !important;
+    color: #fff;
+}
+
+.dark .accordion-button:not(.collapsed) {
+    color: #fff;
+}
+
+.dark .accordion-button {
+    border-bottom-left-radius: unset !important;
+    border-bottom-right-radius: unset !important;
+
 }

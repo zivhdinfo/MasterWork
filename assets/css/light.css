@@ -90,7 +90,8 @@ header .fa-search:hover {
 }
 
 .navbar.bg-light {
-    background: #FFFFFF !important;
+    background: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .navbar .btn-outline-danger {
@@ -219,6 +220,25 @@ header .fa-search:hover {
 
     }
 }
+
+@media (min-width: 749px) and (max-width: 991) {
+    .button-mobilie {
+        display: block !important;
+    }
+
+    .nav-link.not_active::before,
+    .nav-link.active::before,
+    .nav-link.li_active::before {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 2px;
+        background-color: #DC4F72;
+        bottom: 258px;
+        transition: 0.3s all;
+    }
+}
+
 
 
 .navbar-nav .dropdown-menu:before {
@@ -462,6 +482,7 @@ header .fa-search:hover {
 
 .about_company img {
     transition: 0.5s;
+    border-radius: 5px;
 }
 
 .about_company img:hover {
@@ -583,7 +604,7 @@ header .fa-search:hover {
     background-color: #f7f9fc !important;
 }
 
-.faq-image {
+.faq_image {
     position: -webkit-sticky;
     position: sticky;
     top: 80px;
