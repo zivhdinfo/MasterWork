@@ -1,3 +1,5 @@
+Danh sách người làm và các phần hoàn thành :
+https://docs.google.com/spreadsheets/d/1KKNCn-DC3vWawJ2TH2Cagz327iGo4krJ-lgQ5xhYZFA/edit?usp=sharing
 # MasterWork
 Cấu trúc
 - MasterWork
