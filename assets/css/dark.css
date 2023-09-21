@@ -1,64 +1,211 @@
 .dark {
-    transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .dark#myBody {
-    background-color: #1b1d1e;
-    color: white
+  background-color: #1b1d1e;
+  color: white;
 }
 
 /* nav start  */
 .dark .navbar {
-    background-color: #141617 !important;
+  background-color: #141617 !important;
 }
 
-
-
 .dark .nav-link {
-    color: #b7b7b7 !important;
+  color: #b7b7b7 !important;
 }
 
 .dark .nav-link.active {
-    color: #DC4F72 !important;
+  color: #dc4f72 !important;
 }
 
 .dark .dropdown-menu {
-    background-color: #141617 !important;
-    color: white;
-    border: 1px solid #57595d;
+  background-color: #141617 !important;
+  color: white;
+  border: 1px solid #57595d;
 }
 
 .dark a.dropdown-item {
-    color: #fff !important;
-    transition: 0.2s;
+  color: #fff !important;
+  transition: 0.2s;
 }
 
 .dark a.dropdown-item:hover {
-    background-color: #141617 !important;
-    color: #DC4F72 !important;
+  background-color: #141617 !important;
+  color: #dc4f72 !important;
 }
 
 .dark #switchButton .gg-sun {
-    display: block;
-    color: white;
+  display: block;
+  color: white;
 }
 
 .dark #switchButton .gg-moon {
-    display: none;
+  display: none;
 }
 
 .dark .navbar-nav .dropdown-menu:before {
-    content: '';
-    width: 14px;
-    height: 14px;
-    background: #141617;
-    border: 1px solid #57595d;
-    display: block;
-    border-right: none;
-    border-bottom: none;
-    transform: translateX(-50%) rotateZ(45deg);
-    position: absolute;
-    top: 35px;
-    left: 49%;
-    z-index: 1;
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #141617;
+  border: 1px solid #57595d;
+  display: block;
+  border-right: none;
+  border-bottom: none;
+  transform: translateX(-50%) rotateZ(45deg);
+  position: absolute;
+  top: 35px;
+  left: 49%;
+  z-index: 1;
+}
+
+/* case */
+
+.dark .case .sub_title {
+  color: #dc4f72 !important;
+}
+
+.dark .case .title {
+  color: white;
+}
+
+/* testimonial */
+.dark .testimonials .sub_title {
+  color: #dc4f72 !important;
+}
+
+.dark .testimonials .title {
+  color: white;
+}
+
+/* book a demo */
+.dark .book_demo h3 {
+  color: #eeeeee;
+  font-size: 46px;
+}
+
+.dark .book_demo p {
+  color: #b7b7b7;
+  font-size: 16px;
+}
+
+.dark .btn-outline-primary {
+  border: 1px solid #dc4f72;
+  color: #dc4f72;
+}
+
+.dark .btn-outline-primary:hover {
+  background: #dc4f72 !important;
+  border-color: #dc4f72 !important;
+}
+
+.dark .btn-primary {
+  background: #dc4f72;
+  border: 1px solid #dc4f72;
+}
+
+.dark .btn-primary:hover {
+  background: #d62f58 !important;
+  border-color: #cf2952 !important;
+}
+
+/* footer */
+.dark .footer {
+  color: white !important;
+  background: #191c1d !important;
+}
+
+.dark .widget_meta h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.dark .widget_meta a {
+  color: #656f7b !important;
+}
+
+.dark .widget_categories h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.dark .widget_categories a {
+  color: #656f7b !important;
+}
+
+.dark .widget_archive h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.dark .widget_archive a {
+  color: #656f7b !important;
+}
+
+.dark .news-letter h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.dark .end-column {
+  background: #131617;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.dark .end-column h4 {
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+.dark .end-column input {
+  background: #f7f9fc;
+  padding: 12px 20px;
+  width: 78%;
+  font-size: 16px;
+}
+
+.dark .end-column button {
+  background: #dc4f72 !important;
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  padding: 12px 20px;
+  cursor: pointer;
+  color: white;
+  width: 20%;
+}
+
+.dark .end-column p {
+  color: #5a5a5a;
+  padding-top: 5px;
+}
+
+@media screen and (max-width: 991px) {
+  .footer .below-section {
+    display: block !important;
+  }
+}
+
+.dark .copyright p {
+  color: #7b7b7b !important;
+}
+
+.dark .copyright a {
+  color: white !important;
+}
+
+.dark .footer-social {
+  text-align: center;
+}
+
+.dark .footer-social i {
+  padding-left: 10px;
+  padding-right: 10px;
 }
