@@ -40,7 +40,7 @@
 
           <div class="d-flex">
             <button
-              class="d-md-none btn button1"
+              class="d-md-none btn button-mobilie"
               title="Click to switch theme"
               id="switchButton"
             >
@@ -75,7 +75,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle not_active"
+                  class="nav-link dropdown-toggle li_active"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -84,8 +84,9 @@
                   Pages
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Blog Posts</a></li>
+                  <li><a class="dropdown-item" href="#">Landing page</a></li>
+                  <li><a class="dropdown-item" href="#">404 page</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -93,7 +94,14 @@
               </li>
             </ul>
             <span class="badge"
-              ><i class="fa fa-search" aria-hidden="true"></i
+              ><i
+                class="fa fa-search"
+                aria-hidden="true"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              ></i
             ></span>
             <br />
 
@@ -102,7 +110,7 @@
             </button>
 
             <button
-              class="d-none d-md-block btn button2"
+              class="d-none d-md-block btn button-pc"
               title="Click to switch theme"
               id="switchButton"
             >
@@ -114,8 +122,82 @@
         </div>
       </nav>
     </header>
-    <section class="banner"></section>
-    <section class="info"></section>
+    <section class="banner">
+      <div class="container-lg container-md container-sm">
+        <div class="align-items-center flex_banner row">
+          <div class="banner_content col-lg-6 content-left">
+            <h1 class="title">We Execute Our Ideas From Start to Finish</h1>
+            <h2 class="title">
+              Building a beautiful interactive business for startups and
+              innovative companies.
+            </h2>
+
+            <button class="rounded-1 mt-3">Get Started</button>
+          </div>
+          <div class="banner_image col-lg-6">
+            <img class="img-fluid" src="./assets/images/main.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skill py-5">
+      <div class="container-lg container-md container-sm py-md-3">
+        <div class="skill_text header-section text-center mx-auto">
+          <h1 class="sub_title">WHY CHOOSE US</h1>
+          <h1 class="title">
+            Tools for business startup to <br />
+            professional
+          </h1>
+          <p class="my-3">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis <br />dapibus nunc, ut rhoncus
+            turpis sodales quis. Integer sit amet mattis quam.
+          </p>
+        </div>
+        <div class="grid_skill">
+          <div class="justify-content-center row text-center">
+            <div class="col-lg-4 col-md-6 mt-5">
+              <div class="skill_bg">
+                <a href="#service" class="d-block">
+                  <img src="./assets/images/s1.png" alt="" class="img-fluid" />
+                  <h3 class="my-3">Interactive</h3>
+                  <p class="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium tempora rerum perspiciatis?
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-5">
+              <div class="skill_bg">
+                <a href="#service" class="d-block">
+                  <img src="./assets/images/s2.png" alt="" class="img-fluid" />
+                  <h3 class="my-3">Business</h3>
+                  <p class="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium tempora rerum perspiciatis?
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-5">
+              <div class="skill_bg">
+                <a href="#service" class="d-block">
+                  <img src="./assets/images/s3.png" alt="" class="img-fluid" />
+                  <h3 class="my-3">Inspiration</h3>
+                  <p class="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium tempora rerum perspiciatis?
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="about_company py-5">
       <div class="container py-lg-3 mt-3">
@@ -131,7 +213,9 @@
               eveniet quos! Asperiores officia, repudiandae similique
               reiciendis, ab est magnam esse nesciunt ea fuga facere voluptatem.
             </p>
-            <button href="#about" class="btn btn-primary theme-button"> Read More</button>
+            <button href="#about" class="btn btn-primary theme-button">
+              Read More
+            </button>
           </div>
           <div class="col-sm-6 pl-md-5 mt-sm-0 mt-5">
             <img
@@ -183,10 +267,385 @@
       </div>
     </section>
 
-    <section class="commit"></section>
-    <section class="faq"></section>
-    <section class="case"></section>
-    <section class="testimonials"></section>
+    <section class="commit">
+      <div class="container">
+        <div class="commit_left col-lg-6 col-sm-12">
+          <h1 class="title_commit">
+            We are true to ourselves, and commit to always perform at our best.
+          </h1>
+          <p class="mt-md-4 mt-3 mb-md-5 mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus, doloribus atque. Corrupti exercitationem voluptatem
+            ipsum iste consequuntur et vitae voluptas temporibus? Maxime dolores
+            amet voluptatum illo consequatur placeat fugit ducimus.
+          </p>
+          <button class="btn btn-light btn_commit">READ MORE</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq p-5">
+      <div class="container-lg container-md container-sm">
+        <div class="header-section text-center mx-auto">
+          <h1 class="sub_title">QUESTIONS AND ANSWERS</h1>
+          <h1 class="title">General FAQs</h1>
+          <p class="my-3">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis <br />dapibus nunc, ut rhoncus
+            turpis sodales quis. Integer sit amet mattis quam.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-5 mt-5">
+            <div class="faq-image">
+              <img
+                src="./assets/images/women.jpg"
+                class="img-fluid shadow img-curve faq_img"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-md-7 mt-5 pl-md-5">
+            <div
+              class="accordion accordion-flush mb-4"
+              id="accordionFlushExample"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button p-4 collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    At vero eos iusto odio ducimus qui?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Voluptates amet earum velit nobis aliquam laboriosam nihil
+                    debitis facere voluptatibus consectetur quae quasi fuga, ad
+                    corrupti libero omnis sapiente non assumenda, incidunt
+                    officiis eaque iste minima autem.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion accordion-flush mb-4"
+              id="accordionFlushExample2"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button p-4 collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne2"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne2"
+                  >
+                    Sed ut perspiciatis unde omnis?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample2"
+                >
+                  <div class="accordion-body">
+                    Voluptates amet earum velit nobis aliquam laboriosam nihil
+                    debitis facere voluptatibus consectetur quae quasi fuga, ad
+                    corrupti libero omnis sapiente non assumenda, incidunt
+                    officiis eaque iste minima autem.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion accordion-flush mb-4"
+              id="accordionFlushExample3"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button p-4 collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne3"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne3"
+                  >
+                    At vero eos iusto odio ducimus qui?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample3"
+                >
+                  <div class="accordion-body">
+                    Voluptates amet earum velit nobis aliquam laboriosam nihil
+                    debitis facere voluptatibus consectetur quae quasi fuga, ad
+                    corrupti libero omnis sapiente non assumenda, incidunt
+                    officiis eaque iste minima autem.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion accordion-flush mb-4"
+              id="accordionFlushExample4"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button p-4 collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne4"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne4"
+                  >
+                    We denounce with righteous?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample4"
+                >
+                  <div class="accordion-body">
+                    Voluptates amet earum velit nobis aliquam laboriosam nihil
+                    debitis facere voluptatibus consectetur quae quasi fuga, ad
+                    corrupti libero omnis sapiente non assumenda, incidunt
+                    officiis eaque iste minima autem.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion accordion-flush mb-4"
+              id="accordionFlushExample5"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button p-4 collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne5"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne5"
+                  >
+                    perspiciatis unde omnis?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne5"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample5"
+                >
+                  <div class="accordion-body">
+                    Voluptates amet earum velit nobis aliquam laboriosam nihil
+                    debitis facere voluptatibus consectetur quae quasi fuga, ad
+                    corrupti libero omnis sapiente non assumenda, incidunt
+                    officiis eaque iste minima autem.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion accordion-flush mb-4"
+              id="accordionFlushExample6"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button p-4 collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne6"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne6"
+                  >
+                    At vero eos iusto odio ducimus qui?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne6"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample6"
+                >
+                  <div class="accordion-body">
+                    Voluptates amet earum velit nobis aliquam laboriosam nihil
+                    debitis facere voluptatibus consectetur quae quasi fuga, ad
+                    corrupti libero omnis sapiente non assumenda, incidunt
+                    officiis eaque iste minima autem.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case pt-5">
+      <div class="container-lg container-md container-sm">
+        <div class="header-section text-center mx-auto">
+          <h1 class="sub_title">FEATURED CASES</h1>
+          <h1 class="title">Completed Projects</h1>
+          <p class="my-3">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis <br />dapibus nunc, ut rhoncus
+            turpis sodales quis. Integer sit amet mattis quam.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials py-5">
+      <div class="container-lg container-md container-sm">
+        <div class="header-section text-center mx-auto">
+          <h1 class="sub_title">OUR CLIENTS TESTIMONIALS</h1>
+          <h1 class="title">What People Say</h1>
+          <p class="my-3">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.
+          </p>
+        </div>
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <div class="img-circle">
+                      <img
+                        src="./assets/images/team3.jpg"
+                        class="img-fluid avatar"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Exercitationem deserunt aliquid quis ullam tempore atque
+                        quos similique ab quam vel maiores, at, optio, labore
+                        illo hic ipsa quidem odit! Minima.
+                      </h5>
+                      <p class="card-text">Benjamin Lucas</p>
+                      <p class="card-text">
+                        <small class="text-muted">Company name</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <div class="img-circle">
+                      <img
+                        src="./assets/images/team3.jpg"
+                        class="img-fluid avatar"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer.
+                      </p>
+                      <p class="card-text rmmt">
+                        <small class="text-muted"
+                          >Last updated 3 mins ago</small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <div class="img-circle">
+                      <img
+                        src="./assets/images/team3.jpg"
+                        class="img-fluid avatar"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >Last updated 3 mins ago</small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- book a demo -->
     <section class="book_demo py-5">
@@ -201,14 +660,117 @@
         </div>
         <div class="buttons mt-5">
           <button class="btn btn-outline-primary mr-2 theme-button">
-            Book a Demo</
-          >
-          <button class="btn btn-primary theme-button ml-2">
-            Get Started</
-          >
+            Book a Demo
+          </button>
+          <button class="btn btn-primary theme-button ml-2">Get Started</button>
         </div>
       </div>
     </section>
+
+    <section class="footer">
+      <div class="footer-16-main py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 column">
+              <div class="row">
+                <div class="col-md-4 column">
+                  <div id="meta-2" class="widget_meta">
+                    <h3 class="">Meta</h3>
+                    <ul>
+                      <li>
+                        <a href="">Log in</a>
+                      </li>
+                      <li>
+                        <a href="">Entries feed</a>
+                      </li>
+                      <li>
+                        <a href="">Comments feed</a>
+                      </li>
+
+                      <li>
+                        <a href="">WordPress.org</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4 column mt-md-0 mt-4">
+                  <div id="categories-4" class="widget_categories">
+                    <h3 class="">Categories</h3>
+                    <ul>
+                      <li class="cat-item cat-item-2">
+                        <a href="">Business</a>
+                      </li>
+                      <li class="cat-item cat-item-3">
+                        <a href="">Design</a>
+                      </li>
+                      <li class="cat-item cat-item-4">
+                        <a href="">Industry</a>
+                      </li>
+                      <li class="cat-item cat-item-5">
+                        <a href="">Programming</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4 column mt-md-0 mt-4">
+                  <div id="archives-4" class="widget_archive">
+                    <h3 class="">Archives</h3>
+                    <ul>
+                      <li>
+                        <a href="">March 2021</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-6 col-md-12column pl-lg-5 column4 mt-lg-0 mt-5 news-letter"
+            >
+              <h3>Newsletter</h3>
+              <div class="end-column">
+                <h4>Get latest updates and offers.</h4>
+                <form action="" class="subscribe" method="post">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required=""
+                  />
+                  <button type="submit">Go</button>
+                </form>
+                <p>
+                  Sign up for our latest news &amp; articles. We won’t give you
+                  spam mails.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="d-flex below-section justify-content-between align-items-center pt-4 mt-5 copyright"
+          >
+            <div class=" text-lg-left text-center">
+              <p class="CopyRights">
+                © 2023 Masterwork. All Rights Reserved | WordPress Theme by
+                <a href="https://w3layouts.com/">W3Layouts. </a>
+              </p>
+            </div>
+
+            <div class="columns-2 mt-lg-0 mt-3 footer-social">
+
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-google-plus"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Button trigger modal -->
 
     <footer>
       <!-- place footer here -->
@@ -225,6 +787,13 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $("#exampleModal").modal({
+        backdrop: "static",
+        keyboard: false,
+      });
+    </script>
+
     <!-- jquery js  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- website js  -->
