@@ -78,6 +78,47 @@
   z-index: 1;
 }
 
+/* banner dark  */
+.dark .banner {
+  background: linear-gradient(to right, #131617, rgba(255, 255, 255, 0.92)),
+  url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/banner.jpg);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.dark .banner h1.title {
+  color: white;
+}
+
+.dark .banner h2.title {
+  color: #b7b7b7;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  max-width: 450px;
+}
+
+.dark  .banner button {
+  transition: 0.3s ease-out;
+  display: inline-block;
+  line-height: 52px;
+  font-weight: bold !important;
+  padding: 0px 50px !important;
+  text-transform: uppercase;
+  color: #dc4f72;
+  border-color: #dc4f72;
+  border: 1px solid;
+  background: transparent;
+  padding: 5px 40px;
+}
 
 /* skill */
 
@@ -129,10 +170,30 @@
   background: #191c1d !important;
 }
 
+.dark .faq .title{
+  color: white !important;
+}
+
 .dark .faq p{
   color: #7b7b7b;
 }
 
+.dark .accordion-button,
+.dark .accordion-body {
+    border: 1px solid #333;
+    background: #131617 !important;
+    color: #fff;
+}
+
+.dark .accordion-button:not(.collapsed) {
+    color: #fff;
+}
+
+.dark .accordion-button {
+    border-bottom-left-radius: unset !important;
+    border-bottom-right-radius: unset !important;
+
+}
 
 /* case */
 
