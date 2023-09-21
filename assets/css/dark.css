@@ -61,6 +61,61 @@
   z-index: 1;
 }
 
+/* skill */
+
+.dark .skill .sub_title {
+  color: #dc4f72 !important;
+}
+
+.dark .skill .title {
+  color: white;
+}
+
+/* about company */
+.dark .about_company{
+  background: #191c1d;
+}
+.dark .about_company h6{
+  font-size: 16px;
+}
+
+.dark .about_company h3{
+  font-size: 35px;
+}
+
+.dark .about_company p{
+  color: #b7b7b7;
+}
+
+/* stat */
+
+.dark .stats{
+  background: #191c1d;
+}
+
+.dark .stats_info{
+  border: 1px solid grey;
+  background: #131617;
+}
+
+.dark .stats_info p{
+  color: #b7b7b7;
+}
+
+.dark .stats_info .counter{
+  color: #dc4f72;
+}
+
+/* faq */
+.dark .faq {
+  background: #191c1d !important;
+}
+
+.dark .faq p{
+  color: #7b7b7b;
+}
+
+
 /* case */
 
 .dark .case .sub_title {
