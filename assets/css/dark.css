@@ -4,7 +4,7 @@
 
 .dark#myBody {
   background-color: #1b1d1e;
-  color: white;
+  color: white
 }
 
 /* nav start  */
@@ -12,12 +12,14 @@
   background-color: #141617 !important;
 }
 
+
+
 .dark .nav-link {
   color: #b7b7b7 !important;
 }
 
 .dark .nav-link.active {
-  color: #dc4f72 !important;
+  color: #DC4F72 !important;
 }
 
 .dark .dropdown-menu {
@@ -33,7 +35,7 @@
 
 .dark a.dropdown-item:hover {
   background-color: #141617 !important;
-  color: #dc4f72 !important;
+  color: #DC4F72 !important;
 }
 
 .dark #switchButton .gg-sun {
@@ -63,7 +65,7 @@
 }
 
 .dark .navbar-nav .dropdown-menu:before {
-  content: "";
+  content: '';
   width: 14px;
   height: 14px;
   background: #141617;
@@ -78,120 +80,96 @@
   z-index: 1;
 }
 
+.dark .dropdown-toggle::after {
+
+  color: #eee;
+
+}
+
+.dark header .fa-search {
+
+
+  opacity: .7;
+  background: #141617;
+  border: 1px solid #b7b7b7;
+  color: #b7b7b7;
+  font-size: 14px;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
 /* banner dark  */
 .dark .banner {
-  background: linear-gradient(to right, #131617, rgba(255, 255, 255, 0.92)),
-  url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/banner.jpg);
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  display: grid;
-  align-items: center;
-  padding-top: 5rem;
+  background: linear-gradient(to right, #131617, rgba(255, 255, 255, 0.92));
 }
 
-.dark .banner h1.title {
-  color: white;
+.dark h1.title {
+  font-size: 50px;
+  line-height: 57.5px;
+  color: #eee;
+  font-weight: 700;
 }
 
-.dark .banner h2.title {
-  color: #b7b7b7;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 400;
-  max-width: 450px;
-}
-
-.dark  .banner button {
-  transition: 0.3s ease-out;
-  display: inline-block;
-  line-height: 52px;
-  font-weight: bold !important;
-  padding: 0px 50px !important;
-  text-transform: uppercase;
-  color: #dc4f72;
-  border-color: #dc4f72;
-  border: 1px solid;
-  background: transparent;
-  padding: 5px 40px;
-}
-
-/* skill */
-
-.dark .skill .sub_title {
-  color: #dc4f72 !important;
-}
-
-.dark .skill .title {
-  color: white;
-}
-
-/* about company */
-.dark .about_company{
-  background: #191c1d;
-}
-.dark .about_company h6{
-  font-size: 16px;
-}
-
-.dark .about_company h3{
-  font-size: 35px;
-}
-
-.dark .about_company p{
+.dark h2.title {
   color: #b7b7b7;
 }
 
-/* stat */
-
-.dark .stats{
-  background: #191c1d;
+.dark .skill_bg {
+  background: #242728;
+  border: 1px solid #191c1d;
 }
 
-.dark .stats_info{
-  border: 1px solid grey;
+.dark .skill_bg:hover {
+  transform: translateY(-7px);
   background: #131617;
+  transition: all 0.8s;
+  border: 1px solid #333;
 }
 
-.dark .stats_info p{
+.dark .skill h3 {
+
+  color: #eee;
+}
+
+.dark .skill p {
   color: #b7b7b7;
 }
 
-.dark .stats_info .counter{
-  color: #dc4f72;
+/* .about_company  and start  */
+.dark .about_company,
+.dark .stats {
+  background: #212526;
 }
 
-/* faq */
+.dark .stats_info {
+
+  background: #131617;
+
+  border: 1px solid #333;
+}
+
 .dark .faq {
-  background: #191c1d !important;
+  background-color: #212526 !important;
 }
 
-.dark .faq .title{
-  color: white !important;
-}
-
-.dark .faq p{
-  color: #7b7b7b;
-}
-
+/* faq  */
 .dark .accordion-button,
 .dark .accordion-body {
-    border: 1px solid #333;
-    background: #131617 !important;
-    color: #fff;
+  border: 1px solid #333;
+  background: #131617 !important;
+  color: #fff;
 }
 
 .dark .accordion-button:not(.collapsed) {
-    color: #fff;
+  color: #fff;
 }
 
 .dark .accordion-button {
-    border-bottom-left-radius: unset !important;
-    border-bottom-right-radius: unset !important;
+  border-bottom-left-radius: unset !important;
+  border-bottom-right-radius: unset !important;
 
 }
 
@@ -297,6 +275,7 @@
   font-size: 18px;
   padding-bottom: 30px;
 }
+
 .dark .end-column input {
   background: #f7f9fc;
   padding: 12px 20px;

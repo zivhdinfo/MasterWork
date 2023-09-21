@@ -24,7 +24,6 @@
       rel="stylesheet"
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
-  
     />
     <!-- website css dark / light   -->
     <link rel="stylesheet" href="./assets/css/dark.css" />
@@ -751,7 +750,7 @@
           <div
             class="d-flex below-section justify-content-between align-items-center pt-4 mt-5 copyright"
           >
-            <div class=" text-lg-left text-center">
+            <div class="text-lg-left text-center">
               <p class="CopyRights">
                 © 2023 Masterwork. All Rights Reserved | WordPress Theme by
                 <a href="https://w3layouts.com/">W3Layouts. </a>
@@ -759,7 +758,6 @@
             </div>
 
             <div class="columns-2 mt-lg-0 mt-3 footer-social">
-
               <i class="fa-brands fa-facebook"></i>
               <i class="fa-brands fa-linkedin"></i>
               <i class="fa-brands fa-twitter"></i>
@@ -776,6 +774,45 @@
       <!-- place footer here -->
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
+    <div
+      class="modal search-modal"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+      data-bs-keyboard="false"
+      data-bs-backdrop="static"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div id="search" class="pop-overlay">
+              <div class="popup">
+                <form class="search-box d-sm-flex">
+                  <input
+                    type="search"
+                    placeholder="Enter Keyword"
+                    name="s"
+                    required="required"
+                    autofocus=""
+                  />
+                  <button type="submit" class="btn col-12 col-sm mt-2 mt-sm-0">
+                    Search
+                  </button>
+                </form>
+                <a
+                  class="close"
+                  href="#close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  >×</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
