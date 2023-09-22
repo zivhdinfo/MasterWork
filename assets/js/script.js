@@ -31,3 +31,17 @@ switchButtons.forEach(function(button) {
   };
 });
 
+
+window.addEventListener("scroll", function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("back-to-top").style.display = "block";
+    } else {
+        document.getElementById("back-to-top").style.display = "none";
+    }
+});
+
+document.getElementById("back-to-top").addEventListener("click", function() {
+    document.body.scrollTop = 0; // Cho trình duyệt Chrome, Safari
+    document.documentElement.scrollTop = 0; // Cho trình duyệt Firefox, IE, Edge
+});
+
