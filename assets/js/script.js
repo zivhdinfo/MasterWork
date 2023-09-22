@@ -33,8 +33,17 @@ switchButtons.forEach(function(button) {
 
 
 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+ // Thêm sự kiện click cho nút "Back to Top"
+  document.getElementById("backToTopBtn").addEventListener("click", function() {
+    document.body.scrollTop = 0; // Cho trình duyệt Chrome và Safari
+    document.documentElement.scrollTop = 0; // Cho trình duyệt Firefox, IE, Edge, và Opera
+  });
 
+  // Hiển thị hoặc ẩn nút "Back to Top" dựa trên vị trí cuộn trang
+  window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.querySelector(".back-to-top").classList.add("show");
+    } else {
+      document.querySelector(".back-to-top").classList.remove("show");
+    }
+  };
