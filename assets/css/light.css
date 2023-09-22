@@ -848,10 +848,10 @@ header .fa-search:hover {
 } 
 /* Back to top  */
 #back-to-top {
-    display: none;
+    display: block;
     position: fixed;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     z-index: 99;
     border: none;
     outline: none;
@@ -862,4 +862,8 @@ header .fa-search:hover {
     padding: 0;
     opacity: 0.7;
     transition: 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Để canh giữa biểu tượng theo chiều dọc */
 }
+
